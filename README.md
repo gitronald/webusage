@@ -4,6 +4,11 @@
 
 The goal of this data collection tool is to archive a user's behavior and the digital traces of their web experiences. We use a two point approach, involving the collection of ecological and controlled data. Ecological data includes a real user's behavior, their web account histories, and in some cases, real-time snapshots of the websites they visit. Controlled data includes snapshots of websites that we take from a user's computer, including select keyword searches on Google Search or YouTube.
 
+This extension was used to collect data that was used in the following studies:  
+1. https://www.nature.com/articles/s41586-023-06078-5  
+
+
+
 ---  
 
 ## Data Collection Capacities

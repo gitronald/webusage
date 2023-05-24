@@ -1,0 +1,116 @@
+body {
+    /* font-family: 14px Arial, sans-serif; */
+    font: 14px Noto Sans, sans-serif;
+    line-height: 1.8;
+    margin: 0 auto !important;
+    background: #e2e2e2;
+    color: #000;
+}
+
+.margin {margin-bottom: 45px;}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #e2e2e2; 
+}
+
+.btn-blue {
+    background-color: #385a7c;
+    color:#fff;
+    border: #000 1px solid;
+    /*border-radius: 3px;*/
+}
+.btn-blue:hover, .btn-blue:focus {
+    background-color: #266056;
+    color: #fff;
+}
+
+
+.panel-footer {
+    padding: 15px 15px;
+    border:none;
+    text-align: center;
+    background-color: #f5f5f5; 
+}
+
+.col-sm-10 {
+    border-color: #a5a5a5;
+    background: #f5f5f5;
+    padding: 45px 70px;
+    border-radius: 14px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.progress {
+	background: #e1e3dc; 
+	border-radius: 4px; 
+	height: 22px;
+
+}
+
+.progress-bar-custom {
+    background: #385a7c;
+    border-radius: 4px; 
+    height: 22px;
+    color: #fff;
+    padding: 2px 2px 2px 2px;
+}
+
+.sv_qstn fieldset {
+    width: 70%;
+    font-size: 14pt;
+}
+
+.panel-body {
+    font-size: 11pt;
+}
+
+
+.sq-root {
+    border: 1px solid gray;
+    border-left: 4px solid #31776b;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.sq-title {
+    font-size: 18px;
+    margin-left: 5px;
+    color: #00463C 
+}
+
+.sq-label {
+    margin-left: 30px;
+}
+
+/*----------------------------*/
+
+.my-rating {
+    font-size: 12px;
+    color: red;
+}
+.sq-root-cb {
+    border-left: 4px solid orange;
+}
+
+.sq-title-required {
+    color: red;
+}
+
+.sq-item:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+/* Edit color of title background */
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.link-text {
+    color: #0174FF
+}

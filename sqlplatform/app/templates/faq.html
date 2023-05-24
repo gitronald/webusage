@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% import 'macros.html' as macros %}
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-12">
+
+    <h2>FAQ</h2>
+
+    {% for section in faq %}
+      <h3>{{ section.title }}</h3>
+
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      {% for item in section.contents %}
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="{{ section.title|replace(' ', '') }}-heading-{{ loop.index }}">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#{{ section.title|replace(' ', '') }}-collapse-{{ loop.index }}" aria-expanded="true" aria-controls="{{ section.title|replace(' ', '') }}-collapse-{{ loop.index }}">
+                {{ item.question|safe }}
+              </a>
+            </h4>
+          </div>
+          <div id="{{ section.title|replace(' ', '') }}-collapse-{{ loop.index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{ section.title|replace(' ', '') }}-heading-{{ loop.index }}">
+            <div class="panel-body">
+              {{ item.answer|safe }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+{% endblock %}

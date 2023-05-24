@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% import 'macros.html' as macros %}
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-12">
+
+    <p>
+      <b>We are a group of academic researchers studying how people seek out information on the web, and the information that people encounter on the web.</b> Our group includes researchers from Northeastern University, Dartmouth University, Princeton University, University of Exeter, and Rutgers University.
+    </p>
+
+    <p>
+      To collect data for our research, we ask people to install a browser extension. If you choose to join the study, you will be fully informed of all data collection and offered the opportunity to opt-in before any data is collected. All collected data will be kept strictly confidential and used for research purposes only. We will not share your data with anyone who is not involved in this research. This study is approved by the Institutional Review Boards at the respective universities.
+    </p>
+    
+    <p>
+      Our browser extension collects a variety of data from participants:
+      <ol>
+        <li>Browsing history, Google and YouTube account histories (e.g. searches, comments, clicks), and online advertising preferences (from Google, Oracle Data Cloud, and Facebook). This data is initially collected for the year prior to the installation of our browser extension, and then is updated every two weeks.</li>
+        <li>Exposure to embedded Twitter and YouTube URLs on websites.</li>
+        <li>Copies of the HTML seen on specific sites: Google Search, Google News, YouTube, Facebook Newsfeed, and Twitter Feed.</li>
+        <li>Snapshots of selected URLs from your browser. For each URL, the extension saves a copy of the HTML that renders, effectively capturing what you would have seen had you visited that website yourself. Once a week we conduct searches on Google Search, Google News, YouTube, and Twitter, and collect the current front pages of Google News, YouTube, Twitter, and other sources of news. These web page visits will occur in the background and will not affect the normal functioning of your browser.</li>
+      </ol>
+      Additionally, if you choose to participate, data collected from your browser will be linked to survey responses that you provide. These data, as well as those mentioned above, will be used to analyze the correlations between your online behavior and your survey responses.
+    </p>
+
+    <p>
+      After the study is complete, the extension will uninstall itself and all data collection will cease. 
+    </p>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+body {
+    width: 570px;
+    height: 100%;
+}
+
+.container-fluid {
+    padding: 20px 20px 10px;
+    background-color: #e1e3dc;
+    border: darkslategray solid 1px;
+}
+
+#version {
+    text-align: center;
+    font-size: small;
+}

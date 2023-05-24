@@ -1,0 +1,119 @@
+{% extends "base.html" %} {% import 'macros.html' as macros %}
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-12">
+
+    <h2>Privacy Policy</h2>
+
+    <p>
+      This webpage describes the data that is collected during this study, how this data will be used, how participants' privacy and security will be protected, and how participants can leave the study.     
+    </p>
+
+    <h3>Scope</h3>
+    <p>
+      This privacy policy covers data that is collected under the auspices of the "web usage study" that is being performed by researchers at Northeastern University, Dartmouth University, Princeton University, University of Exeter, and Rutgers University. This data includes:
+      <ul>
+        <li>Responses to surveys</li>
+        <li>Data collected from the researchers' browser extension</li>
+        <li>Data about participants sourced from professional survey companies (in cases where a participant was recruited by a survey company)</li>
+      </ul>
+    </p>
+    
+    <h3>What Data Do We Collect</h3>
+    <p>
+      Our browser extension will collect four types of data from your browser.
+        <ol>
+          <li><b>Browsing history</b>, <b>Google and YouTube account histories</b> (e.g. searches, comments, clicks), and <b>online advertising preferences</b> (from Google, Bluekai, Facebook). This data is initially collected for the year prior to the installation of our browser extension, and we then check these sources once every two weeks to collect updates until the study is completed.</li>
+          <li><b>Embedded YouTube and Twitter URLs on websites</b>, i.e., what page you were visiting, and what YouTube videos and/or tweets were embedded in that page. This data is collected until the study is completed.</li>
+          <li><b>Copies of the HTML seen on specific sites: Google Search, Google News, YouTube, Facebook Newsfeed, and Twitter Feed</b>. This data is collected until the study is completed.</li>
+          <li><b>Snapshots of selected URLs from your browser</b>. For each URL, the extension saves a copy of the HTML that renders, effectively capturing what you would have seen had you visited that website yourself. Once a week we conduct searches on Google Search, Google News, Youtube, and Twitter, and collect the current frontpage of Google News, YouTube, Twitter, and other sources of news. These web page visits will occur in the background and will not affect the normal functioning of your browser.</li>
+        </ol>
+        Additionally, participants are required to complete a <b>survey</b> containing questions about <b>demographics, web usage, and media preferences</b>.
+    </p>
+
+    <p>
+      Each participant in the study is assigned a random unique identifier, and this identifier is associated with that participant's survey responses and data collected from their browser by our browser extension.
+    </p>
+
+    <p>
+      All of the data stated above is sent to a server that is owned by the researchers. This server is located in the United States.
+    </p>
+
+    <h3>What Data Do We Not Collect</h3>
+    <p>
+      To the greatest extent possible, our extension tries to strip identifying information from data before sending it to our server. This includes:
+      <ul>
+        <li>Your name, username, and account ID from webpages on Google, Facebook, Twitter, and YouTube.</li>
+        <li>Private messages on social media websites (e.g., Facebook Messenger messages and Twitter Direct Messages)</li>
+        <li>Data from webpages that you open in incognito/private browsing windows, or your browsing history from within incognito/private browsing windows</li>
+      </ul>
+    </p>
+
+    <h3>How Will Data Be Used</h3>
+    <p>
+      The data collected during this study will be used for scientific purposes. This may include publishing blogs, articles, op-eds, and books; submitting funding proposals; and producing scholarly publications like conference papers and journal articles.
+    </p>
+
+    <p>
+      Raw data collected during this study will only be used by approved researchers at Northeastern University, Dartmouth University, Princeton University, University of Exeter, and Rutgers University. Raw data will never be publicly released or shared with third-parties.
+    </p>
+
+    <p>
+      Data collected during this study will never be sold.
+    </p>
+
+    <h3>Privacy Protections</h3>
+    <p>
+      Participants in our study are pseudonymous, which means that each participant is assigned a unique random ID. We do not ask participants for personally identifiable information like their name, address, etc.       
+    </p>
+
+    <p>
+      As noted above, raw data collected during this study will never be publicly released or shared with third-parties. Publications that result from this research will include aggregated results drawn from the raw data. These aggregated results will never identify individual participants in the study, or raw data from any individual. Aggregated data may appear within publications, or it may be made available for download.
+    </p>
+
+    <p>
+      As noted above, we try to minimize the amount of personally identifiable information collected by our extension, e.g., by removing usernames and user IDs from data before sending it to our server. However, we cannot guarantee that all personally identifiable information will be removed from collected data. This is why we will never release raw data from this study.
+    </p>
+
+    <p>
+      For participants recruited by professional survey companies: some participant data, such as survey responses, may be retained by the survey company since the survey company will administer these facets of the study. Participants interested in how this data will be stored and used should contact the relevant survey company.
+    </p>
+
+    <h3>Data Security</h3>
+    <p>
+      We implement a number of mechanisms to make sure that data we collect remains secure.
+      <ul>
+        <li>
+          We use industry standard TLS encryption to secure data transfers from our browser extension to our servers.
+        </li>
+        <li>
+          The servers that store collected data are housed in a secure room at Northeastern University that is only accessible to staff that hold special key cards.
+        </li>
+        <li>
+          The servers that store collected data are hardened against common security threats using industry standard software like firewalls.
+        </li>
+        <li>
+          Access to collected data is limited to approved researchers from our team, and they may only access data after logging in with a secure SSH cryptographic key.
+        </li>
+        <li>
+          Raw data will never leave our secure servers; researchers will only ever download aggregated data that has been anonymized.
+        </li>
+        <li>
+          All accesses to our servers are securely logged.
+        </li>
+      </ul>
+    </p>
+
+    <h3>Leaving the Study</h3>
+    <p>
+      Participants are free to leave our study at any time. Participants may leave by uninstalling or disabling our extension in their browser (see the <a href="/faq/">FAQ</a> for instructions on how to uninstall the extension).
+    </p>
+
+    <p>
+      If you want us to delete the data we collected from your browser while you were a participant, you may contact Professor Christo Wilson at <a href="mailto:cbw@ccs.neu.edu">cbw@ccs.neu.edu</a>.
+    </p>
+  </div>
+</div>
+
+{% endblock %}

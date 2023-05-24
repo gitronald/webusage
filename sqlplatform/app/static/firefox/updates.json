@@ -1,0 +1,88 @@
+{
+    "addons": {
+        "{5b66c614-f950-4642-9017-8c590c085395}": {
+            "updates": [
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/web_usage_study-0.5.1-fx.xpi",
+                    "version": "0.5.1"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/web_usage_study-0.5.4-fx.xpi",
+                    "version": "0.5.4"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/web_usage_study-0.5.5-fx.xpi",
+                    "version": "0.5.5"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/web_usage_study-0.5.7-fx.xpi",
+                    "version": "0.5.7"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.5.8-fx.xpi",
+                    "version": "0.5.8"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.6.1-fx.xpi",
+                    "version": "0.6.1"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.6.2-fx.xpi",
+                    "version": "0.6.2"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.6.3-fx.xpi",
+                    "version": "0.6.3"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.6.4-fx.xpi",
+                    "version": "0.6.4"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.6.5-fx.xpi",
+                    "version": "0.6.5"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.6.8-fx.xpi",
+                    "version": "0.6.8"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.7.2-fx.xpi",
+                    "version": "0.7.2"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.7.3-fx.xpi",
+                    "version": "0.7.3"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.7.4-fx.xpi",
+                    "version": "0.7.4"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.7.5-fx.xpi",
+                    "version": "0.7.5"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.7.6-fx.xpi",
+                    "version": "0.7.6"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.7.7-fx.xpi",
+                    "version": "0.7.7"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.7.8-fx.xpi",
+                    "version": "0.7.8"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.7.9-fx.xpi",
+                    "version": "0.7.9"
+                },
+                {
+                    "update_link": "https://webusage.xyz/static/firefox/northeastern_university_web_usage_study-0.8.0-fx.xpi",
+                    "version": "0.8.0"
+                }
+            ]
+        }
+    }
+}

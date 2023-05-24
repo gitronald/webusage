@@ -1,0 +1,61 @@
+{
+    "name": "Northeastern University Web Usage Study",
+    "description": "This extension implements a user study. It collects web usage data and snapshots of web pages from your browser.",
+    "author": "Ronald E. Robertson",
+    "version": "0.8.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "browser-polyfill.js",
+            "config.js",
+            "utils.js",
+            "api/browser_history.js",
+            "api/website_history.js",
+            "api/snapshot.js",
+            "api/activity.js",
+            "cookies.js",
+            "workers.js",
+            "background.js"
+        ]
+    },
+    "content_scripts": [{
+        "js": [
+            "browser-polyfill.js",
+            "content/utils.js",
+            "content/activity.js",
+            "content/snapshot.js",
+            "content/mutations/twitter.js",
+            "content/mutations/facebook.js",
+            "content/mutations/youtube.js",
+            "content/mutations/google_news.js"
+        ],
+        "matches": [
+            "https://*/*", 
+            "http://*/*"
+        ],
+        "run_at": "document_start",
+        "all_frames": false
+    }],
+    "incognito": "spanning",
+    "permissions": [
+        "https://facebook.com/",
+        "https://accounts.google.com/",
+        "https://www.twitter.com/",
+        "https://*.qualtrics.com/",
+        "https://*.yougov.com/",
+        "alarms",
+        "cookies",
+        "history",
+        "storage",
+        "notifications"
+    ],
+    "icons": { 
+        "16":  "icons/icon16.png",
+        "48":  "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "browser_action": {
+        "default_popup": "pages/popup.html"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'" 
+}   

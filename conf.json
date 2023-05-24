@@ -1,0 +1,20 @@
+{
+    "source": {
+        "includePattern": ".+\\.js(doc|x)?$",
+        "include": [
+            "./README.md",
+            "./extension"
+        ],
+        "exclude": [
+            "./archive",
+            "./node_modules", 
+            "./extension/pages/survey-react"
+        ]
+    },
+    "recurseDepth": 10,
+    "opts": {
+        "destination": "./docs/",
+        "recurse": true,
+        "template": "node_modules/jsdoc/templates/default_no_home"
+    }
+}

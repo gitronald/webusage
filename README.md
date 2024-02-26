@@ -4,12 +4,14 @@
 
 The goal of this data collection tool is to archive a user's behavior and the digital traces of their web experiences. We use a two point approach, involving the collection of ecological and controlled data. Ecological data includes a real user's behavior, their web account histories, and in some cases, real-time snapshots of the websites they visit. Controlled data includes snapshots of websites that we take from a user's computer, including select keyword searches on Google Search or YouTube.
 
-This extension was used to collect data that was used in the following studies:  
-1. https://www.nature.com/articles/s41586-023-06078-5  
 
+This extension was used to collect data for the following studies:  
 
+1. Robertson, R. E., Green, J., Ruck, D. J., Ognyanova, K., Wilson, C., & Lazer, D. (2023). Users choose to engage with more partisan news than they are exposed to on Google Search. *Nature*, 618, 342–348. DOI: [10.1038/s41586-023-06078-5](https://doi.org/10.1038/s41586-023-06078-5)  
+2. Chen, A. Y., Nyhan, B., Reifler, J., Robertson, R. E., & Wilson, C. (2023). Subscriptions and external links help drive resentful users to alternative and extremist YouTube channels. *Science Advances*, 9(35). DOI: [10.1126/sciadv.add8080](https://doi.org/10.1126/sciadv.add8080)  
+3. Gleason, J., Hu, D., Robertson, R. E., & Wilson, C. (2023). Google the gatekeeper: How search components affect clicks and attention. *Proceedings of the International AAAI Conference on Web and Social Media (ICSWM 2023)*, 17, 245–256. DOI: [10.1609/icwsm.v17i1.22142](https://doi.org/10.1609/icwsm.v17i1.22142)
 
----  
+<br>
 
 ## Data Collection Capacities
 
@@ -33,7 +35,7 @@ We used a browser extension in order to collect four types of data about users�
     Collection: automating the collection of data from various web services and accounts, including their browsing history, Google account, and ad preferences.  
     Scope: limited to pre-selected accounts and services, and by the kinds of data those services provide access to.  
 
----  
+<br>
 
 ## Technical Details
 
@@ -43,30 +45,18 @@ The browser extension is written in JavaScript, HTML, CSS, and the [WebExtension
 
 ### Documentation
 
-Throughout the project, we use [`jsdoc`](https://devhints.io/jsdoc) to document the browser extension code. To rebuild the documentation, install `node` and `jsdocs`, then run:
+Throughout the project, we use [`jsdoc`](https://devhints.io/jsdoc) to document the browser extension code. To rebuild the documentation, install `node` and `jsdocs`, then run: `bash ./scripts/make_docs.sh`  
 
-```
-bash make_docs.sh
-```
-
----  
-
+<br>
 
 ## Server
 
-We used a Flask app built to receive and store data sent from extension in a MySQL database.  
-
-Data storage format is specified in `application/models.py` and matches the
-format above.
+We used a Flask app built to receive and store data sent from extension in a MySQL database. Data storage format is specified in `application/models.py` and matches the format above.  
 
 To start the server for local testing:
 1. Create a virtual environment (`python3.6`) and install `requirements.txt`  
-2. Open `./start_plaform.sh` and change `FLASK_ENV` to your virtualenv path  
-3. Run `bash start_platform.py`  
+2. Open `./scripts/start_plaform.sh` and change `FLASK_ENV` to your virtualenv path  
+3. Run `bash ./scripts/start_platform.sh`  
 4. Flask will begin running on http://0.0.0.0:80/ and logging to the console  
-5. Data targeted at the server (e.g. http://x.y.z.a:80/save_data) will be saved to a SQL database specified in `application/config.py`  
-
-<!-- TODO: 
-https://flask.palletsprojects.com/en/1.1.x/deploying/wsgi-standalone/ 
--->
+5. Data targeted at the server (e.g. http://x.y.z.a:80/save_data) will be saved to a SQL database specified in `./sqlplatform/config.py`  
 
